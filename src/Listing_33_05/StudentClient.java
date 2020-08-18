@@ -62,7 +62,7 @@ public class StudentClient extends Application {
         @Override
         public void handle(ActionEvent actionEvent) {
             try {
-                Socket socket = new Socket(host, 8000);
+                Socket socket = new Socket(host, 8003);
 
                 ObjectOutputStream toServer = new ObjectOutputStream(socket.getOutputStream());
 

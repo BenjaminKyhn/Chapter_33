@@ -17,7 +17,7 @@ public class StudentServer {
 
     public StudentServer() {
         try {
-            ServerSocket serverSocket = new ServerSocket(8000);
+            ServerSocket serverSocket = new ServerSocket(8003);
             System.out.println("Server started ");
 
             outputToFile = new ObjectOutputStream(new FileOutputStream("student.dat", true));
