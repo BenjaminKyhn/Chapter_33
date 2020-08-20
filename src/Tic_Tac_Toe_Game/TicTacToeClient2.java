@@ -17,7 +17,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-public class TicTacToeClient extends Application implements TicTacToeConstants {
+public class TicTacToeClient2 extends Application implements TicTacToeConstants {
     private boolean myTurn = false;
     private char myToken = ' ';
     private char otherToken = ' ';
@@ -98,9 +98,9 @@ public class TicTacToeClient extends Application implements TicTacToeConstants {
                         sendMove();
                         receiveInfoFromServer();
                     } else if (player == PLAYER2) {
+                        receiveInfoFromServer();
                         waitForPlayerAction();
                         sendMove();
-                        receiveInfoFromServer();
                     }
                 }
             } catch (Exception ex) {
