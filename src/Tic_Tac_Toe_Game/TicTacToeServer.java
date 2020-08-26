@@ -73,6 +73,8 @@ public class TicTacToeServer extends Application implements TicTacToeConstants {
         private Socket player1;
         private Socket player2;
 
+        //test
+
         private char[][] cell = new char[3][3];
 
         private DataInputStream fromPlayer1;
